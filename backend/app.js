@@ -14,13 +14,13 @@ const categoryRoutes = require("./routes/category");
 
 //DB Connection
 mongoose
-    .connect(process.env.DATABASE, {
+    .connect(process.env.DATABASE, { //process attach all the env variables
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true
     })
     .then(() => {
-        console.log("DB CONNECTED");
+        console.log("DB CONNECTED SUCCESSFULLY!");
     });
 
 //Middlewares

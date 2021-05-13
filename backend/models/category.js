@@ -9,7 +9,7 @@ const categorySchema = new mongoose.Schema({
         unique: true
     }
 }, {
-    timestamps: true
+    timestamps: true  //used to make record of the time at which a new entry made
 });
 
 module.exports = mongoose.model("Category", categorySchema);
